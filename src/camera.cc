@@ -13,10 +13,11 @@ int main(int argv, char** argc){
 
   while (vid.read(frame))
   {
-    imshow("webcam", frame);//ROI);
+    imshow("webcam", frame);
     if(waitKey(30) >= 0)
     {
       break;
     }
   }
+  return 0;
 }
